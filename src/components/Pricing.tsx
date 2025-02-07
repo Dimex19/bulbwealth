@@ -30,11 +30,11 @@ const Product:React.FC = () => {
   return (
     <div className="w-full flex flex-col relative mb-[125px]">
         <img src={Ellipse} alt="" className="absolute right-0" />
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center pt-[85px] mb-[56px]">
         <p className="text-[#6C6CFF] font-semibold text-[24px] inline-block mb-[16px]">Pricing</p>
         <h2 className="font-bold text-[64px] font-[Bricolage_Grotesque] text-white ">Simple and Flexible Pricing</h2>
       </div>
-      <div className="flex justify-between  pl-[207px] pr-[207px]">
+      <div className="flex justify-between  pl-[14vw] pr-[14vw]">
         <PricingCard title="Free Plan" paragraph='Ideal for individuals looking to start managing their finances effectively without any financial commitment.' month="0" annual="0" className='w-[493px] h-[592px]' component={[
             { Component: Smart, componentProps:{text: 'Smart Budgeting Tools'}},
             { Component: Secure, componentProps:{text: 'Secure Transactions'}}
