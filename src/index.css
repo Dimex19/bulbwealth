@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700&display=swap');
+
+@theme {
+
+  --animate-scroll: scroll 5s linear infinite alternate;
+  --animate-scroll2: scroll2 5s linear infinite alternate;
+  --animate-scroll3: scroll3 5s linear infinite alternate;
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(-10vw); /* Start far right */
+    }
+    100% {
+      transform: translateX(-45vw); /* Move to far left */
+    }
+  }
+
+  @keyframes scroll2 {
+    0% {
+      transform: translateX(10vw); /* Start far left */
+    }
+    100% {
+      transform: translateX(49vw); /* Move to far right */
+    }
+  }
+  @keyframes scroll3 {
+    0% {
+      transform: scaleY(-1); /* Start far left */
+    }
+    50% {
+      transform: scaleY(0); /* Move to far right */
+    }
+    100% {
+      transform: scaleY(1); /* Move to far right */
+    }
+  }
+}
+* {
+  /* padding: 0; */
+  /* margin: 0; */
+  box-sizing: border-box;
+  /* font-family: "Inter", serif; */
+}
+body {
+  background-color: #121B26;
+}
+
+
