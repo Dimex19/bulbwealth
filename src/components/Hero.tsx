@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
         <button className="flex justify-center gap-2 items-center w-[160px] h-[44px] border-[#6C6CFF] rounded-[24px] border px-4 py-2">
           <img src={PlayLogo} alt="" className="w-[px] h-[26.12px]" />
           <div className="ml-2">
-            <p className="text-[10px] font-semibold w-[50px]">GET IT ON</p>
+            <p className="text-[10px] font-semibold">GET IT ON</p>
             <p className="font-semibold  -mt-1">Google Play</p>
           </div>
         </button>
