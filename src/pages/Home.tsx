@@ -4,6 +4,8 @@ import Hero from '../components/Hero'
 import Accessibility from '../components/Accessibility'
 import Product from '../components/Product'
 import Pricing from '../components/Pricing'
+import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 
 const Home:React.FC = () => {
   return (
@@ -13,6 +15,8 @@ const Home:React.FC = () => {
         <Accessibility/>
         <Product/>
         <Pricing/>
+        <Contact/>
+        <Footer/>
     </>
   )
 }

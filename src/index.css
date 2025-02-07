@@ -1,11 +1,11 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700&display=swap');
-
+@import "tailwindcss/utilities";  /* ✅ This enables Tailwind utilities like `animate-bounce` */
 @theme {
 
   --animate-scroll: scroll 5s linear infinite alternate;
   --animate-scroll2: scroll2 5s linear infinite alternate;
   --animate-scroll3: scroll3 5s linear infinite alternate;
+  --animate-rotate: rotate-box 5s cubic-bezier(.03,.97,.11,.97) infinite alternate;
 
   @keyframes scroll {
     0% {
@@ -33,6 +33,20 @@
     }
     100% {
       transform: scaleY(1); /* Move to far right */
+    }
+  }
+  @keyframes rotate-box {
+    0% {
+      transform: perspective(800px) rotate3d(1, 1, 0, 20deg) skewX(10deg) skewY(10deg); /* Start far left */
+    }
+    33.33% {
+      transform: rotate(90deg); /* Move to far right */
+    }
+    66.66% {
+      transform: rotate(180deg); /* Move to far right */
+    }
+    100% {
+      transform: rotate(360deg); /* Move to far right */
     }
   }
 }

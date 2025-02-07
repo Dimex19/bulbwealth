@@ -28,7 +28,7 @@ const Financial = ({ text }: { text: string }) => {
   };
 const Product:React.FC = () => {
   return (
-    <div className="w-full flex flex-col relative mb-[300px]">
+    <div className="w-full flex flex-col relative mb-[125px]">
         <img src={Ellipse} alt="" className="absolute right-0" />
       <div className="flex flex-col items-center">
         <p className="text-[#6C6CFF] font-semibold text-[24px] inline-block mb-[16px]">Pricing</p>
