@@ -27,18 +27,18 @@ const Hero: React.FC = () => {
         you with a range of secure solutions.
       </p>
       <div className="flex justify-center items-center gap-5">
-        <button className="flex justify-center gap-2 items-center w-[142px] h-[41px] border-[#6C6CFF] rounded-[24px] border px-4 py-2">
+        <button className="flex justify-center p-[2px] items-center w-[148px] h-[44px] border-[#6C6CFF] rounded-[24px] border px-4 py-2">
           <p className="text-3xl"><FaApple /></p>
           <div className="ml-2">
-            <p className="text-[9px]">Download on the</p>
-            <p className="font-semibold">App Store</p>
+            <p className="text-[9px] ">Download on the</p>
+            <p className="font-semibold leading-5">App Store</p>
           </div>
         </button>
-        <button className="flex justify-center gap-2 items-center w-[142px] h-[41px] border-[#6C6CFF] rounded-[24px] border px-4 py-2">
+        <button className="flex justify-center gap-2 items-center w-[160px] h-[44px] border-[#6C6CFF] rounded-[24px] border px-4 py-2">
           <img src={PlayLogo} alt="" className="w-[px] h-[26.12px]" />
           <div className="ml-2">
             <p className="text-[10px] font-semibold w-[50px]">GET IT ON</p>
-            <p className="font-semibold">Google Play</p>
+            <p className="font-semibold  -mt-1">Google Play</p>
           </div>
         </button>
       </div>
@@ -63,12 +63,13 @@ const Wrapper = styled.div`
 const Section = styled.div`
   display: flex;
   align-items: center;
-  width: 351px;
-  height: 28.52px;
+  width: 355px;
+  height: 35px;
   border: 1.31px solid #6C6CFF;
-  border-radius: 14.02px;
+  border-radius: 50px;
   padding: 3.51px;
   margin: auto;
+  font-family: Inter;
 
   p {
     text-align: center;
