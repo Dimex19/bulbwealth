@@ -23,8 +23,8 @@ const style2 = {
 const Header: React.FC = ()=> {
     return (
         <Wrapper>
-            <img src={Logo} alt="logo" />
-            <Links>
+            <img src={Logo} alt="logo"/>
+            <Links  className="overflow-y-hidden" >
                 <Link to='/about' style={{textDecoration: 'none', color: 'white'}}>About</Link>
                 <Link to='/product' style={{textDecoration: 'none', color: 'white'}}>Product</Link>
                 <Link to='/pricing' style={{textDecoration: 'none', color: 'white'}}>Pricing</Link>
