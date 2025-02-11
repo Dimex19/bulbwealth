@@ -9,7 +9,7 @@ import Ernest from '../assets/ernest.png'
 
 const Hero: React.FC = () => {
   return (
-    <Wrapper className="flex flex-col gap-5 justify-center items-center relative min-h-screen" >
+    <Wrapper className="flex flex-col gap-5 justify-center items-center relative min-h-screen translate-y-20" >
       <Section className="flex items-center w-[80vw] md:w-[28vw] h-[35px] rounded-[50px] border-[1.31px] border-[#6c6cff] p-[3.51px] font-[Inter] mt-6" >
         <InnerSection>
           <p className="text-[12px] md:text-[14px] w-[80px] md:w-[100px] p-0.5">New Feature</p>
