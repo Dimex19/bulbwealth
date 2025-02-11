@@ -6,8 +6,8 @@ const Contact:React.FC = () => {
   return (
     <div className='flex flex-col md:flex-row justify-around items-center pb-[100.5px]'>
         <div className="text-white p-4 md:p-0 md:w-[40vw] md:pl-12 md:pr-12">
-            <h2 className='text-white font-bold font-[Bricolage_Grotesque] mb-[20px] text-center md:text-start text-[48px] md:text-[64px]'>Contact</h2>
-            <p className="font-normal text-[20px] mb-12 className='font-[Inter]">Our friendly team would love to hear from you.</p>
+            <h2 className='text-white font-bold font-[Bricolage_Grotesque] mb-[20px] text-center md:text-start text-[42px] md:text-[64px]'>Contact</h2>
+            <p className="font-normal text-[18px] mb-12 className='font-[Inter]">Our friendly team would love to hear from you.</p>
             <form action="" className='font-[Inter]'>
                 <div className='inputDiv flex flex-col'>
                     <label htmlFor="" className='mb-1.5'>Email</label>

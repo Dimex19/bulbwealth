@@ -27,14 +27,14 @@ const Hero: React.FC = () => {
         you with a range of secure solutions.
       </p>
       <div className="flex justify-center items-center gap-5 font-[Inter]">
-        <button className="flex justify-center p-[2px] items-center w-[148px] h-[44px] border-[#6C6CFF] rounded-[24px] border px-4 py-2">
+        <button className="flex justify-center p-[2px] items-center scale-90 border-[#6C6CFF] rounded-[24px] border px-4 py-2">
           <p className="text-3xl"><FaApple /></p>
           <div className="ml-2">
             <p className="text-[9px] ">Download on the</p>
             <p className="font-semibold leading-5">App Store</p>
           </div>
         </button>
-        <button className="flex justify-center gap-2 items-center w-[170px] h-[44px] border-[#6C6CFF] rounded-[24px] border px-4 py-2">
+        <button className="flex justify-center gap-2 items-center scale-90 border-[#6C6CFF] rounded-[24px] border px-4 py-2">
           <img src={PlayLogo} alt="" className="w-[px] h-[26.12px]" />
           <div className="ml-2">
             <p className="text-[10px] font-semibold text-start">GET IT ON</p>
