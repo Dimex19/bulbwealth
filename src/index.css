@@ -2,26 +2,46 @@
 @import "tailwindcss/utilities";  /* ✅ This enables Tailwind utilities like `animate-bounce` */
 @theme {
 
-  --animate-scroll: scroll 5s linear infinite alternate;
-  --animate-scroll2: scroll2 5s linear infinite alternate;
-  --animate-scroll3: scroll3 5s linear infinite alternate;
+  --animate-scroll: taofeeqah 3s linear infinite alternate;
+  --animate-scroll2: ernest 3s linear infinite alternate;
+  --animate-scroll3: scroll3 3s linear infinite alternate;
+  --animate-scrollMd: taofeeqahMd 5s linear infinite alternate;
+  --animate-scroll2Md: ernestMd 5s linear infinite alternate;
+  --animate-scroll3Md: scroll3 5s linear infinite alternate;
   --animate-rotate: rotate-box 5s cubic-bezier(.03,.97,.11,.97) infinite alternate;
 
-  @keyframes scroll {
+  @keyframes taofeeqah {
     0% {
-      transform: translateX(-10vw); /* Start far right */
+      transform: translateX(5vw); /* Start far right */
     }
     100% {
-      transform: translateX(-45vw); /* Move to far left */
+      transform: translateX(25vw); /* Move to far left */
+    }
+  }
+  @keyframes taofeeqahMd {
+    0% {
+      transform: translateX(0vw); /* Start far right */
+    }
+    100% {
+      transform: translateX(-35vw); /* Move to far left */
     }
   }
 
-  @keyframes scroll2 {
+  @keyframes ernest {
     0% {
-      transform: translateX(10vw); /* Start far left */
+      transform: translateX(0vw); /* Start far left */
     }
     100% {
-      transform: translateX(49vw); /* Move to far right */
+      transform: translateX(-20vw); /* Move to far right */
+    }
+  }
+  
+  @keyframes ernestMd {
+    0% {
+      transform: translateX(0vw); /* Start far left */
+    }
+    100% {
+      transform: translateX(35vw); /* Move to far right */
     }
   }
   @keyframes scroll3 {
@@ -54,7 +74,6 @@
   /* padding: 0; */
   /* margin: 0; */
   box-sizing: border-box;
-  /* overflow-x: hidden; */
   /* font-family: "Inter", serif; */
 }
 body {

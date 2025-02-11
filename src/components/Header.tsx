@@ -1,4 +1,3 @@
-import styled from "styled-components"
 import Logo from '../assets/logo.png'
 import { Link } from "react-router-dom"
 import ButtonProps from "./Button"
@@ -18,46 +17,22 @@ const style2 = {
     height: '40px',
     borderRadius: '20px',
     marginLeft: '12px'
-
 }
+
 const Header: React.FC = ()=> {
     return (
-        <Wrapper>
+        <div className="text-white p-5 md:pl-[50px] md:pr-[50px] flex justify-between items-center">
             <img src={Logo} alt="logo"/>
-            <Links  className="overflow-y-hidden" >
+            <div  className="hidden w-100 h-[50px] text-4 p-5 border-1 rounded-[25px] justify-between items-center decoration-0 text-white overflow-y-hidden md:flex" >
                 <Link to='/about' style={{textDecoration: 'none', color: 'white'}}>About</Link>
                 <Link to='/product' style={{textDecoration: 'none', color: 'white'}}>Product</Link>
                 <Link to='/pricing' style={{textDecoration: 'none', color: 'white'}}>Pricing</Link>
-            </Links>
-            <Buttons>
+            </div>
+            <div className="hidden md:flex">
                 <ButtonProps text="Log in" customStyle={style1}/>
                 <ButtonProps text="Sign up" customStyle={style2}/>
-            </Buttons>
-        </Wrapper>
+            </div>
+        </div>
     )
 }
 export default Header
-
-const Wrapper = styled.div`
-    color: white;
-    padding: 20px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-`
-const Links = styled.div`
-    width: 400px;
-    height: 50px;
-    font-size: 16px;
-    padding: 20px;
-    border: 1px solid white;
-    border-radius: 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-`
-const Buttons = styled.div`
-
-`

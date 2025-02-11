@@ -6,7 +6,7 @@ const style = {
     color: 'white',
     border: '1px solid #6C6CFF',
     borderRadius: '50px',
-    width: '405px',
+    width: '100%',
     height: '44px',
     marginBottom: '48px'
 }
@@ -24,11 +24,11 @@ interface myCardProps<T extends object> {
 }
 const PricingCard = <T extends object>({title, paragraph, className, month, annual, component,}: myCardProps<T>) => {
   return (
-    <div className={`flex flex-col justify-center items-center text-[14px] pl-[35px] pr-[44px] font-medium text-white bg-[#1A2635A3]   border-1 border-[#667B96] rounded-[10px] ${className}`}>
+    <div className={`flex flex-col justify-center items-center text-[14px] pl-[35px] pr-[44px] font-medium text-white bg-[#1A2635A3] border-1 border-[#667B96] rounded-[10px] ${className}`}>
         <div className="flex flex-col">
-            <div className="pl-[18px] w-[387px]">
+            <div className="pl-[18px] md:w-[387px]">
                 <h3 className="text-[24px] font-bold font-[Bricolage_Grotesque] mb-[8px]">{title}</h3>
-                <p className="text-[14px] font-normal">{paragraph}</p>
+                <p className="md:text-[14px] font-normal">{paragraph}</p>
             </div>
             <hr className="text-[#6C6CFF] mt-[16px] mb-[56px]"/>
             <p className="text-[32px] font-bold bg-gradient-to-b from-white to-#0f0f64-500 text-transparent bg-clip-text mb-[8px]">${month} / month</p>
