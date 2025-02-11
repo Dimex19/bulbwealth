@@ -10,12 +10,12 @@ import Ernest from '../assets/ernest.png'
 const Hero: React.FC = () => {
   return (
     <Wrapper className="flex flex-col gap-5 justify-center items-center relative min-h-screen translate-y-20" >
-      <Section className="flex items-center w-[80vw] md:w-[28vw] h-[35px] rounded-[50px] border-[1.31px] border-[#6c6cff] p-[3.51px] font-[Inter] mt-6" >
+      <Section className="flex items-center w-[80vw] sm:w-[70vw] md:w-[23vw] h-[35px] rounded-[50px] border-[1.31px] border-[#6c6cff] p-[3.51px] font-[Inter] mt-6" >
         <InnerSection>
-          <p className="text-[12px] md:text-[14px] w-[80px] md:w-[100px] p-0.5">New Feature</p>
+          <p className="text-[12px] md:text-[12px] w-[80px] md:w-[100px] p-0.5">New Feature</p>
         </InnerSection>
-        <p className="text-[12px] md:text-[14px]">
-          Check out the new dashboard <span className="pl-1 md:pl-0"><FaArrowRight /></span>
+        <p className="text-[12px] md:text-[12px]">
+          Check out the new dashboard <span className="pl-1"><FaArrowRight /></span>
         </p>
       </Section>
       <h1 className="w-[90vw] -mt-3 md:w-[800px] text-center font-[Bricolage_Grotesque] font-bold text-[32px] md:text-[80px] leading:[40px] md:leading-[100px]">
@@ -43,7 +43,7 @@ const Hero: React.FC = () => {
         </button>
       </div>
       {/* Wrap animations in a div with proper height */}
-      <div className="relative w-full h-[350px] md:h-[800px] mt-7 flex  overflow-x-hidden">
+      <div className="relative w-full h-[450px] sm:h-[650px] md:h-[800px] mt-7 flex  overflow-x-hidden">
         <img src={RainbowLight} alt="" className="absolute w-[100vw] animate-scroll3 md:animate-scroll3Md" />
         <div className="flex w-full">
           <img src={Ernest} alt="" className="absolute left-[10vw] scale-75 md:scale-none animate-scroll2 md:animate-scroll2Md" />

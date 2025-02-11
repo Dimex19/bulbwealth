@@ -55,7 +55,7 @@ const Header: React.FC = () => {
 
             {/* Mobile Menu */}
             {showMenu && (
-                <div className="absolute top-[70px] left-0 w-full h-[100vh] bg-[#202C3C] text-white flex flex-col items-center py-4 md:hidden z-50">
+                <div className="absolute top-[70px] left-0 w-full h-[100vh] bg-[#121B26] text-white flex flex-col items-center py-4 md:hidden z-50">
                     <Link to='/about' className="py-2 text-white no-underline" onClick={toggleMenu}>About</Link>
                     <Link to='/product' className="py-2 text-white no-underline" onClick={toggleMenu}>Product</Link>
                     <Link to='/pricing' className="py-2 text-white no-underline" onClick={toggleMenu}>Pricing</Link>
