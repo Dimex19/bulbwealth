@@ -1,15 +1,6 @@
 import React from 'react'
 import Button from './Button'
 
-const style = {
-    backgroundColor: 'transparent',
-    color: 'white',
-    border: '1px solid #6C6CFF',
-    borderRadius: '50px',
-    width: '100%',
-    height: '44px',
-    marginBottom: '48px'
-}
 interface ComponentEntry<T> {
     Component: React.ComponentType<T>,
     componentProps: T
@@ -34,7 +25,8 @@ const PricingCard = <T extends object>({title, paragraph, className, month, annu
             <p className="text-[32px] font-bold bg-gradient-to-b from-white to-#0f0f64-500 text-transparent bg-clip-text mb-[8px]">${month} / month</p>
 
             <p className="text-[14px] font-medium bg-gradient-to-b from-white to-#0f0f64-500 text-transparent bg-clip-text mb-[40px]">${annual} / annually</p>
-            <Button text="Get a Demo" customStyle={style}/>
+            <Button text="Get a Demo" className='w-full h-[44px] mb-[48px] bg-transparent border border-[#6C6CFF] rounded-[50px] transition-all ease-in-out duration-2000 hover:bg-[#6C6CFF] hover:to-[#7F56D9 hover:shadow-[0px_0px_29px_4px_rgba(100,100,111,0.7)] '/>
+
             {component.map(({ Component, componentProps}, index) => (<Component key={index} {...componentProps} />))}
         </div>
     </div>

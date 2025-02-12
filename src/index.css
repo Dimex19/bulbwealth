@@ -9,6 +9,7 @@
   --animate-scroll2Md: ernestMd 5s linear infinite alternate;
   --animate-scroll3Md: scroll3 5s linear infinite alternate;
   --animate-rotate: rotate-box 5s cubic-bezier(.03,.97,.11,.97) infinite alternate;
+  --animate-buttonHover: buttonHover 2s ease-in-out;
 
   @keyframes taofeeqah {
     0% {
@@ -67,6 +68,17 @@
     }
     100% {
       transform: rotate(360deg); /* Move to far right */
+    }
+  }
+  @keyframes buttonHover {
+    0% {
+      background-color: transparent;
+    }
+    50% {
+      background-color: #6C6CFF;
+    }
+    100% {
+      background-color: #7F56D9;
     }
   }
 }
