@@ -14,8 +14,8 @@ const Hero: React.FC = () => {
         <InnerSection>
           <p className="text-[12px] md:text-[12px] w-[80px] md:w-[100px] p-0.5">New Feature</p>
         </InnerSection>
-        <p className="text-[12px] md:text-[12px]">
-          Check out the new dashboard <span className="pl-1"><FaArrowRight /></span>
+        <p className="text-[12px] md:text-[12px] flex justify-around">
+          Check out the new dashboard <span><FaArrowRight /></span>
         </p>
       </Section>
       <h1 className="w-[90vw] -mt-3 md:w-[800px] text-center font-[Bricolage_Grotesque] font-bold text-[32px] md:text-[80px] leading:[40px] md:leading-[100px]">
