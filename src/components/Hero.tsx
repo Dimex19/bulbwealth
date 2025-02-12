@@ -9,11 +9,11 @@ import Ernest from '../assets/ernest.png'
 
 const Hero: React.FC = () => {
   return (
-    <Wrapper className="flex flex-col gap-5 justify-center items-center relative min-h-screen translate-y-20" >
+    <div className="flex flex-col gap-5 text-white justify-center items-center relative min-h-screen translate-y-20" >
       <Section className="flex items-center w-[80vw] sm:w-[70vw] md:w-[23vw] h-[35px] rounded-[50px] border-[1.31px] border-[#6c6cff] p-[3.51px] font-[Inter] mt-6" >
-        <InnerSection>
+        <div className="border-[1.31px] border-[#6C6CFF] rounded-[14.02px]">
           <p className="text-[12px] md:text-[12px] w-[80px] md:w-[100px] p-0.5">New Feature</p>
-        </InnerSection>
+        </div>
         <p className="text-[12px] md:text-[12px] flex justify-around">
           Check out the new dashboard <span><FaArrowRight /></span>
         </p>
@@ -50,23 +50,20 @@ const Hero: React.FC = () => {
           <img src={Taofeeqah} alt="" className="absolute right-[10vw] scale-75 md:scale-none animate-scroll md:animate-scrollMd" />
         </div>
       </div>
-    </Wrapper>
+    </div>
   );
 };
 
 export default Hero;
 
-const Wrapper = styled.div`
-  color: white;
-`;
 
 const Section = styled.div`
-  
 
   p {
     text-align: center;
     /* font-size: 14px; */
     display: flex;
+    justify-content: space-around;
     align-items: center;
     margin-left: 10.52px;
     font-family: "Inter", serif;
@@ -77,10 +74,4 @@ const Section = styled.div`
       align-items: center;
     }
   }
-`;
-
-const InnerSection = styled.div`
-  border: 1.31px solid #6C6CFF;
-  border-radius: 14.02px;
-  /* padding: 2px 7px; */
 `;
