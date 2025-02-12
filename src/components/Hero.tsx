@@ -10,14 +10,15 @@ import Ernest from '../assets/ernest.png'
 const Hero: React.FC = () => {
   return (
     <div className="flex flex-col gap-5 text-white justify-center items-center relative min-h-screen translate-y-20" >
-      <Section className="flex items-center w-[80vw] sm:w-[70vw] md:w-[23vw] h-[35px] rounded-[50px] border-[1.31px] border-[#6c6cff] p-[3.51px] font-[Inter] mt-6" >
-        <div className="border-[1.31px] border-[#6C6CFF] rounded-[14.02px]">
-          <p className="text-[12px] md:text-[12px] w-[80px] md:w-[100px] p-0.5">New Feature</p>
+      <div className="flex items-center w-[75vw] sm:w-[70vw] md:w-[23vw] h-[35px] rounded-[50px] border-[1.31px] border-[#6c6cff] p-[3.51px] font-[Inter] mt-6" >
+        <div className="w-[30%]">
+          <p className="text-[12px] md:text-[12px] md:w-[100px] p-1 border-[1.31px] text-center border-[#6C6CFF] rounded-[14.02px]">New Feature</p>
         </div>
-        <p className="text-[12px] md:text-[12px] flex justify-around">
-          Check out the new dashboard <span><FaArrowRight /></span>
-        </p>
-      </Section>
+        <div className="flex justify-around items-center w-[70%]">
+          <p className="text-[12px] md:text-[12px]">Check out the new dashboard</p>
+          <p className="text-[12px]"><FaArrowRight /></p>
+        </div>
+      </div>
       <h1 className="w-[90vw] -mt-3 md:w-[800px] text-center font-[Bricolage_Grotesque] font-bold text-[32px] md:text-[80px] leading:[40px] md:leading-[100px]">
         Discover the Future of Personal Finance.
       </h1>
