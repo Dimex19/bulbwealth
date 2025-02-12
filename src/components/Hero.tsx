@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import { FaArrowRight, FaApple } from "react-icons/fa";
 import "tailwindcss";
 import PlayLogo from '../assets/googleplaylogo.png'
@@ -12,7 +11,7 @@ const Hero: React.FC = () => {
     <div className="flex flex-col gap-5 text-white justify-center items-center relative min-h-screen translate-y-20" >
       <div className="flex items-center w-[75vw] sm:w-[70vw] md:w-[23vw] h-[35px] rounded-[50px] border-[1.31px] border-[#6c6cff] p-[3.51px] font-[Inter] mt-6" >
         <div className="w-[30%]">
-          <p className="text-[12px] md:text-[12px] md:w-[100px] p-1 border-[1.31px] text-center border-[#6C6CFF] rounded-[14.02px]">New Feature</p>
+          <p className="text-[12px] md:text-[12px] pt-1 pb-1 pl-0.5 pr-0.5 border-[1.31px] text-center border-[#6C6CFF] rounded-[14.02px]">New Feature</p>
         </div>
         <div className="flex justify-around items-center w-[70%]">
           <p className="text-[12px] md:text-[12px]">Check out the new dashboard</p>
@@ -56,23 +55,3 @@ const Hero: React.FC = () => {
 };
 
 export default Hero;
-
-
-const Section = styled.div`
-
-  p {
-    text-align: center;
-    /* font-size: 14px; */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: 10.52px;
-    font-family: "Inter", serif;
-
-    span {
-      margin-left: 3.51px;
-      display: flex;
-      align-items: center;
-    }
-  }
-`;
